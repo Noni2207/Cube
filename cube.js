@@ -1,39 +1,38 @@
 
-
    function Surfacearea() {
-    var stranica = eval(document.CUBE.stranica.value.replace(",",".").replace(/ /g,""));
-    var diagonala = eval(document.CUBE.diagonala.value.replace(",",".").replace(/ /g,""));
-    var povrsina;
-    var zapremina;
+    var page = eval(document.CUBE.page.value.replace(",",".").replace(/ /g,""));
+    var diagonal = eval(document.CUBE.diagonal.value.replace(",",".").replace(/ /g,""));
+    var area;
+    var volume;
     var desMesta = (document.CUBE.desMesta.value);
     
-    if (document.CUBE.stranica.value != "") {
-      diagonala = stranica * Math.sqrt(2); 
+    if (document.CUBE.page.value != "") {
+      diagonal = page * Math.sqrt(2); 
       document.getElementById(" ");
-    } else if (document.CUBE.diagonala.value != "") {
-      stranica = diagonala / Math.sqrt(2);  
+    } else if (document.CUBE.diagonal.value != "") {
+      page = diagonal / Math.sqrt(2);  
       document.getElementById(" ") ;
     } else {
         
       location.href = "#error1";
       return;
     }     
-    document.CUBE.diagonala.value = ((diagonala.toFixed(desMesta)).toString()).replace(/\B(?=(?:\d{3})+(?!\d))/g, " ").replace(".",",");
-    document.CUBE.stranica.value = ((stranica.toFixed(desMesta)).toString()).replace(/\B(?=(?:\d{3})+(?!\d))/g, " ").replace(".",","); 
+    document.CUBE.diagonal.value = ((diagonal.toFixed(desMesta)).toString()).replace(/\B(?=(?:\d{3})+(?!\d))/g, " ").replace(".",",");
+    document.CUBE.page.value = ((page.toFixed(desMesta)).toString()).replace(/\B(?=(?:\d{3})+(?!\d))/g, " ").replace(".",","); 
     
-    zapremina = stranica * stranica * stranica;
+    volume = page * page * page;
       
-    document.CUBE.zapremina.value = ((zapremina.toFixed(desMesta)).toString()).replace(/\B(?=(?:\d{3})+(?!\d))/g, " ").replace(".",","); 
+    document.CUBE.volume.value = ((volume.toFixed(desMesta)).toString()).replace(/\B(?=(?:\d{3})+(?!\d))/g, " ").replace(".",","); 
     
-    povrsina = 6 * stranica * stranica;
+    area = 6 * page * page;
       
-    document.CUBE.povrsina.value = ((povrsina.toFixed(desMesta)).toString()).replace(/\B(?=(?:\d{3})+(?!\d))/g, " ").replace(".",","); 
+    document.CUBE.area.value = ((area.toFixed(desMesta)).toString()).replace(/\B(?=(?:\d{3})+(?!\d))/g, " ").replace(".",","); 
    
    }
    
 function goreDM() {
  if (document.CUBE.desMesta.value == "3") {
-   document.CUBE.desMista.value = "";
+   document.CUBE.desMesta.value = "";
  }
 }
 function doleDM() {
@@ -41,6 +40,7 @@ function doleDM() {
    document.CUBE.desMesta.value = "3"; 
  }
 }  
+     
      
      
      
