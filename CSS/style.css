@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
@@ -52,3 +53,52 @@
       </div> <!--wrapper--> 
  </body>  
 </html>
+=======
+@charset "utf-8";
+/* CSS Document */
+
+body { margin: 0px 120px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background-image: -webkit-linear-gradient(270deg,rgba(184,163,164,1.00) 0%,rgba(0,253,255,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(184,163,164,1.00) 0%,rgba(0,253,255,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(184,163,164,1.00) 0%,rgba(0,253,255,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(184,163,164,1.00) 0%,rgba(0,253,255,1.00) 100.00%);}
+
+#wrapper{
+	background:#CCE5FF;
+	margin: 20px auto;
+	padding: 15px;
+	width: 960px;
+}
+#header{
+	background:#E0E0E0; 
+	padding: 15px;
+	overflow: hidden;
+	margin: 0 0 20px 0 ;
+}
+h1 {font:2.75em slabo,arial,sans-serif; color:darkblue; margin:0.2em 0;
+	float: center}
+h2 {font:2.2em slabo,arial,sans-serif; color:darkblue; margin:0.1em 0}
+h3 {font:1.2em arial,sans-serif; color:darkblue; margin:0.1em 0; padding-top:10px}
+h3:first-child {padding-top:0}
+ input.desMista{width:1.5em; text-align:center; font-size:1em;}   
+.main {padding:0 0.75em 0.3em; clear:both;color:darkslateblue;}
+.main input[type="text"], .main input[type="tel"] {margin:0.3em 0;}
+.main input[readonly] {border:0; border-bottom:1px solid #666666; padding:0.2em; margin:0.5em;}
+p, ul.text {font:1.05em arial,sans-serif; line-height:1.3; margin:0.5em 0; text-align:justify;}
+p span, .prom, h3 span, li span {font: italic 1.2em "Times New Roman",serif}
+span.norm {font: normal 1.2em "Times New Roman",serif}
+sub, sup {font: normal 0.7em "Times New Roman",serif}
+sub.it, sup.it {font: italic 0.7em "Times New Roman",serif}
+.tab input {padding:0.65em; margin:0.5em 0; min-width:5em}
+.tab input[type="submit"] {margin-right:1.7em}
+table.result tr td:first-child {font-size:1.05em}
+.img{
+    position: absolute;
+    top: 8%;
+    right: 15%
+}
+>>>>>>> 96b3c697f6243fb52b2d1a19d8f7a671d1c8dccf
